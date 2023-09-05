@@ -1,0 +1,17 @@
+import random
+
+words_list = ['horse', 'camel', 'elephant', 'baboon', 'monkey']
+
+# randomly choose a word from the words_list and assign it to a variable
+choosen = random.choice(words_list)
+
+# Take the input from the user and check and assigns that to a variable.
+guess = input("Guess the letter : ").lower()
+
+# user the for loop and iterates through the words_list and check for the matching
+
+for letter in choosen:
+    if letter == guess:
+        print("!-Right-!")
+    else:
+        print("-!Wrong!-")
