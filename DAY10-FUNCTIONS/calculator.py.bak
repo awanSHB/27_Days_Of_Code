@@ -1,0 +1,57 @@
+print('''
+ _____________________
+|  _________________  |
+| |               0.| |
+| |_________________| |
+|  ___ ___ ___   ___  |
+| | 7 | 8 | 9 | | + | |
+| |___|___|___| |___| |
+| | 4 | 5 | 6 | | - | |
+| |___|___|___| |___| |
+| | 1 | 2 | 3 | | x | |
+| |___|___|___| |___| |
+| | . | 0 | = | | / | |
+| |___|___|___| |___| |
+|_____________________|
+''')
+
+
+def division(a, b):
+    return a/b
+
+def multiplication(a, b):
+    return a*b
+
+def addition(a, b):
+    return a+b
+    
+def subtraction(a, b):
+    return a-b
+
+operations = {'/': division,
+              '*': multiplication,
+              '+': addition,
+              '-': subtraction}
+print()
+
+keep_going = True
+while keep_going:
+    def cal():
+        n1 = int(input("Enter the first number: "))
+        for i in operations:
+            print(i)
+        keep_perform = True
+        while keep_perform:
+            calculation = input("Pick up operation: ")
+            n2 = int(input("Enter the next number: "))
+            op = operations[calculation]
+            answer = op(n1, n2)
+            print(f"{n1} {calculation} {n2} = {answer}")
+            print()
+            check = input(f"If you want to perform operations with {answer} press x, for restart press y: ")
+            if check == 'x':
+                n1 = answer
+            elif check=='y':
+                keep_perform = False
+                cal()
+    cal()
