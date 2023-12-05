@@ -1,0 +1,3 @@
+def func(name, age):
+    print("Your name is : "+name+ "your age is : "+age)
+func('sohaib', '18')
