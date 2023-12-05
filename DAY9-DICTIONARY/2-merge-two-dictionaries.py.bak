@@ -1,0 +1,13 @@
+dict1 = {'ten':10, 'twenty':20, 'thirty': 30}
+dict2 = {'forty':40, 'fifty':50, 'sixty': 60}
+my_dict = {}
+for i in range(0, 3):
+    my_dict.update(dict1)
+    my_dict.update(dict2)
+print(my_dict)
+print()
+
+dict1 = {'ten':10, 'twenty':20, 'thirty': 30}
+dict2 = {'forty':40, 'fifty':50, 'sixty': 60}
+dict1.update(dict2)
+return dict1

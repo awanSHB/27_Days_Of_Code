@@ -1,0 +1,8 @@
+sample_dict = {'a': 100,
+               'b': 200, 
+               'c': 300}
+
+k = int(input("Enter the values that you want to check : "))
+for j in sample_dict:
+    if k==sample_dict[j]:
+        print("Yes the number ",k, " exists at '",j,"'") 

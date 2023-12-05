@@ -1,0 +1,7 @@
+employees = ['Kelly', 'Emma']
+defaults = {"designation": 'Developer', "salary": 8000}
+my_dict = {}
+my_dict = employees
+for i in range(len(employees)):
+    employees[i].update(defaults)
+print(my_dict)

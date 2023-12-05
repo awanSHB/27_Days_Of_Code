@@ -1,0 +1,40 @@
+sample_dict = {
+    "name": "Kelly",
+    "age": 25,
+    "salary": 8000,
+    "city": "New york"}
+keys = ["name", "salary"] 
+my = {}
+print()
+for j in sample_dict:
+        if j not in keys:
+            my.update({j : sample_dict[j]})
+print(my)
+
+a_dictionary = {"one": 1, "two": 2, "three": 3, "four": 4}
+
+keys_to_remove = ["one", "three"]
+for key in keys_to_remove:
+  del a_dictionary[key]
+
+print(a_dictionary)
+
+a_dictionary = {"one": 1, "two": 2, "three": 3, "four": 4}
+
+keys_to_remove = ["one", "three"]
+for key in keys_to_remove:
+  a_dictionary.pop(key)
+
+print(a_dictionary)
+
+sample_ct = {
+    "name": "Kelly",
+    "age": 25,
+    "salary": 8000,
+    "city": "New york"}
+kes = ["name", "salary"] 
+y = {}
+
+for k in kes:
+    sample_ct.pop(k)
+print(sample_ct)
