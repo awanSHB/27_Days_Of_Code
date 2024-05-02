@@ -1,0 +1,30 @@
+1.A constructor is a unique method used to initialize an object of the class.
+
+2.Python will provide a default constructor if no constructor is defined.
+
+3.Constructor is not a method and doesn’t return anything. it returns None
+
+4.In Python, we have three types of constructor default, Non-parametrized, and parameterized constructor.
+
+5.Using self, we can access the instance variable and instance method of the object.
+
+6.The first argument self refers to the current object.
+
+7.Constructor overloading is not possible in Python.
+
+8.If the parent class doesn’t have a default constructor, then the compiler would not insert a 
+default constructor in the child class.
+
+9.A child class constructor can also invoke the parent class constructor using the super() method.
+
+---------------------------DESTRUCTOR-------------------------
+
+1.In object-oriented programming, A destructor is called when an object is deleted or destroyed.
+
+2.Destructor is used to perform the clean-up activity before destroying the object,
+such as closing database connections or filehandle.
+
+3.In Python we use __del__() method to perform clean-up task before deleting the object.
+
+4.The destructor will not invoke when we delete object reference. It will only 
+invoke when all references to the objects get deleted.
